@@ -1,0 +1,6 @@
+export CONN_STR="dbname=intelfeed user='postgres' host='localhost' port='5432' password='intelfeed-devdb-secret'"
+export SCHEMA="osint"
+export S3_URL="localhost:9000"
+export S3_USER="docker"
+export S3_PASS="dockerdocker"
+export KNATIVE_BROKER_URL="http://kafka-broker-ingress.knative-eventing.svc.cluster.local/intel-feed/default"

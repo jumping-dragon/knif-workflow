@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "lib"
+version = "0.1.17"
+description = "Shared Libraries Dependency Layer"
+authors = ["TIP <tip-devs@teamt5.org>"]
+readme = "README.md"
+
+packages = [
+    { include = "lib" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+psycopg = {extras = ["c"], version = "^3.1.19"}
+pydantic = "^2.7.1"
+minio = "^7.2.7"
+iocextract = "^1.16.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
